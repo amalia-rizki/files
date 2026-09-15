@@ -3,185 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard September 2026 — Puskesmas Tambang Ulang</title>
+<title>Dashboard September 2026</title>
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13px;
-        background: #f0f2f5; color: #1a1a1a; padding: 16px; }
-.container { max-width: 700px; margin: 0 auto; background: white;
-              border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-              overflow: hidden; }
-.header { background: #2c3e50; color: white; padding: 18px 20px; text-align: center; }
-.header h1 { font-size: 14px; font-weight: normal; opacity: 0.8; }
-.header h2 { font-size: 20px; font-weight: bold; margin-top: 4px; }
-.body { padding: 16px; }
-.legenda { display: flex; gap: 16px; flex-wrap: wrap;
-            margin-bottom: 14px; font-size: 12px; color: #555; }
-.leg-item { display: flex; align-items: center; gap: 4px; }
-table { width: 100%; border-collapse: collapse; }
-th { background: #34495e; color: white; padding: 8px 4px;
-      text-align: center; font-size: 12px; font-weight: 600; }
-td { border: 1px solid #e8e8e8; vertical-align: top;
-      min-height: 60px; width: 14.28%; padding: 4px; }
-td.kosong { background: #fafafa; border-color: #f0f0f0; }
-td.libur { background: #fff5f5; }
-td.today { background: #eef7ff; outline: 2px solid #3498db; }
-.tgl-num { font-size: 13px; font-weight: bold; color: #2c3e50;
-             margin-bottom: 4px; }
-td.libur .tgl-num { color: #e74c3c; }
-td.today .tgl-num { color: #2980b9; }
-.icons { display: flex; flex-wrap: wrap; gap: 2px; }
-.icon-link { font-size: 16px; text-decoration: none;
-               line-height: 1; cursor: pointer;
-               transition: transform 0.1s; }
-.icon-link:hover { transform: scale(1.3); }
-.rekap-section { margin-top: 14px; padding: 10px 14px;
-                   background: #f8f9fa; border-radius: 8px;
-                   font-size: 12px; display: flex; gap: 12px;
-                   flex-wrap: wrap; align-items: center; }
-.rekap-link { text-decoration: none; color: #2c3e50; font-weight: 500;
-                padding: 4px 8px; background: white; border-radius: 6px;
-                border: 1px solid #ddd; }
-.rekap-link:hover { background: #eef7ff; border-color: #3498db; }
-.footer { text-align: center; font-size: 10px; color: #aaa;
-            padding: 10px; border-top: 1px solid #eee; margin-top: 14px; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 20px; }
+  #pesan-error { display:none; text-align:center; margin-top: 100px; color: #c0392b; font-size: 18px; }
+  #konten { display:none; }
 </style>
 </head>
 <body>
-<div class="container">
-  <div class="header">
-    <h1>Puskesmas Tambang Ulang</h1>
-    <h2>📅 September 2026</h2>
-  </div>
-  <div class="body">
-    <div class="legenda"><span class="leg-item">💊 Register</span><span class="leg-item">📦 Distribusi</span><span class="leg-item">🚛 Penerimaan</span></div>
-    <table>
-      <thead><tr><th>Sen</th><th>Sel</th><th>Rab</th><th>Kam</th><th>Jum</th><th>Sab</th><th>Min</th></tr></thead>
-      <tbody><tr><td class="kosong"></td>
-<td class="hari">
-  <div class="tgl-num">1</div>
-  <div class="icons"><a href="https://amalia-rizki.github.io/files/2026-09/register/2026-09-01.html#k9#mQvR2$wX4nL" target="_blank" title="Register" class="icon-link">💊</a></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">2</div>
-  <div class="icons"><a href="https://amalia-rizki.github.io/files/2026-09/register/2026-09-02.html#k9#mQvR2$wX4nL" target="_blank" title="Register" class="icon-link">💊</a><a href="https://amalia-rizki.github.io/files/2026-09/distribusi/2026-09-02.html#k9#mQvR2$wX4nL" target="_blank" title="Distribusi" class="icon-link">📦</a><a href="https://amalia-rizki.github.io/files/2026-09/penerimaan/2026-09-02.html#k9#mQvR2$wX4nL" target="_blank" title="Penerimaan" class="icon-link">🚛</a></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">3</div>
-  <div class="icons"><a href="https://amalia-rizki.github.io/files/2026-09/register/2026-09-03.html#k9#mQvR2$wX4nL" target="_blank" title="Register" class="icon-link">💊</a></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">4</div>
-  <div class="icons"><a href="https://amalia-rizki.github.io/files/2026-09/register/2026-09-04.html#k9#mQvR2$wX4nL" target="_blank" title="Register" class="icon-link">💊</a></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">5</div>
-  <div class="icons"><a href="https://amalia-rizki.github.io/files/2026-09/register/2026-09-05.html#k9#mQvR2$wX4nL" target="_blank" title="Register" class="icon-link">💊</a><a href="https://amalia-rizki.github.io/files/2026-09/distribusi/2026-09-05.html#k9#mQvR2$wX4nL" target="_blank" title="Distribusi" class="icon-link">📦</a></div>
-</td>
-<td class="hari libur">
-  <div class="tgl-num">6</div>
-  <div class="icons"></div>
-</td></tr><tr>
-<td class="hari">
-  <div class="tgl-num">7</div>
-  <div class="icons"><a href="https://amalia-rizki.github.io/files/2026-09/register/2026-09-07.html#k9#mQvR2$wX4nL" target="_blank" title="Register" class="icon-link">💊</a></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">8</div>
-  <div class="icons"><a href="https://amalia-rizki.github.io/files/2026-09/register/2026-09-08.html#k9#mQvR2$wX4nL" target="_blank" title="Register" class="icon-link">💊</a><a href="https://amalia-rizki.github.io/files/2026-09/distribusi/2026-09-08.html#k9#mQvR2$wX4nL" target="_blank" title="Distribusi" class="icon-link">📦</a></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">9</div>
-  <div class="icons"><a href="https://amalia-rizki.github.io/files/2026-09/register/2026-09-09.html#k9#mQvR2$wX4nL" target="_blank" title="Register" class="icon-link">💊</a></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">10</div>
-  <div class="icons"><a href="https://amalia-rizki.github.io/files/2026-09/register/2026-09-10.html#k9#mQvR2$wX4nL" target="_blank" title="Register" class="icon-link">💊</a></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">11</div>
-  <div class="icons"><a href="https://amalia-rizki.github.io/files/2026-09/register/2026-09-11.html#k9#mQvR2$wX4nL" target="_blank" title="Register" class="icon-link">💊</a></div>
-</td>
-<td class="hari today">
-  <div class="tgl-num">12</div>
-  <div class="icons"><a href="https://amalia-rizki.github.io/files/2026-09/distribusi/2026-09-12.html#k9#mQvR2$wX4nL" target="_blank" title="Distribusi" class="icon-link">📦</a></div>
-</td>
-<td class="hari libur">
-  <div class="tgl-num">13</div>
-  <div class="icons"></div>
-</td></tr><tr>
-<td class="hari">
-  <div class="tgl-num">14</div>
-  <div class="icons"></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">15</div>
-  <div class="icons"></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">16</div>
-  <div class="icons"></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">17</div>
-  <div class="icons"></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">18</div>
-  <div class="icons"></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">19</div>
-  <div class="icons"></div>
-</td>
-<td class="hari libur">
-  <div class="tgl-num">20</div>
-  <div class="icons"></div>
-</td></tr><tr>
-<td class="hari">
-  <div class="tgl-num">21</div>
-  <div class="icons"></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">22</div>
-  <div class="icons"></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">23</div>
-  <div class="icons"></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">24</div>
-  <div class="icons"></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">25</div>
-  <div class="icons"></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">26</div>
-  <div class="icons"></div>
-</td>
-<td class="hari libur">
-  <div class="tgl-num">27</div>
-  <div class="icons"></div>
-</td></tr><tr>
-<td class="hari">
-  <div class="tgl-num">28</div>
-  <div class="icons"></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">29</div>
-  <div class="icons"></div>
-</td>
-<td class="hari">
-  <div class="tgl-num">30</div>
-  <div class="icons"></div>
-</td><td class="kosong"></td><td class="kosong"></td><td class="kosong"></td><td class="kosong"></td></tr></tbody>
-    </table>
-    
-    <div class="footer">Diperbarui: 12/09/2026 11:32</div>
-  </div>
+<div id="pesan-error">
+  <h2>⛔ Akses Tidak Valid</h2>
+  <p>Link tidak lengkap atau password salah.</p>
 </div>
+<div id="konten"></div>
+<script>
+(function(){
+  var hash = window.location.hash.slice(1);
+  if (!hash) { document.getElementById('pesan-error').style.display='block'; return; }
+  var enc = "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";
+  try {
+    var key = unescape(encodeURIComponent(hash));
+    var data = atob(enc);
+    var result = '';
+    for (var i = 0; i < data.length; i++) {
+      result += String.fromCharCode(data.charCodeAt(i) ^ key.charCodeAt(i % key.length));
+    }
+    var decoded = decodeURIComponent(escape(result));
+    var el = document.getElementById('konten');
+    el.innerHTML = decoded;
+    el.style.display = 'block';
+  } catch(e) {
+    document.getElementById('pesan-error').style.display = 'block';
+  }
+})();
+</script>
 </body>
 </html>
