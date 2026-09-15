@@ -1,76 +1,238 @@
+<!-- dibuat: 2026-09-15 14:12:58 -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Distribusi 12 September 2026</title>
+<title>Distribusi Obat & BMHP 12 September 2026</title>
 <style>
-  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 20px; }
-  #pesan-error { display:none; text-align:center; margin-top: 100px; color: #c0392b; font-size: 18px; }
-  #konten { display:none; }
-  #toast { position:fixed; bottom:24px; left:50%; transform:translateX(-50%);
-             background:#2c3e50; color:white; padding:10px 20px;
-             border-radius:20px; font-size:13px; opacity:0;
-             transition:opacity 0.3s; pointer-events:none; z-index:9999; }
-  #toast.show { opacity:1; }
+:root {
+  --warna: #1e8449;
+  --warna-gelap: #196f3d;
+  --warna-hover: #d5f5e3;
+  --warna-muda: #d5f5e3;
+}
+</style>
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px;
+       color: #1a1a1a; background: white; padding: 12px; }
+.halaman { width: 100%; }
+.header { text-align: center; border-bottom: 2px solid var(--warna); padding-bottom: 12px; margin-bottom: 20px; }
+.header h1 { font-size: 15px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+.header h2 { font-size: 13px; font-weight: normal; margin-top: 4px; color: var(--warna); }
+.header .meta { font-size: 11px; color: #555; margin-top: 6px; }
+.judul-seksi { font-size: 12px; font-weight: bold; background: var(--warna);
+               color: white; padding: 6px 12px; margin: 16px 0 0; border-radius: 4px 4px 0 0;
+               width: 100%; display: block; }
+table { width: 100%; border-collapse: collapse; font-size: 11px; table-layout: fixed; }
+thead th { background: var(--warna-gelap); color: white; padding: 6px 8px;
+           text-align: left; font-weight: 600; word-wrap: break-word; }
+tbody tr:hover { background: var(--warna-hover); }
+td { padding: 5px 8px; border-bottom: 1px solid #e0e0e0; vertical-align: middle;
+     word-wrap: break-word; overflow-wrap: break-word; }
+.grup-header td { background: var(--warna-muda); font-weight: bold; padding: 6px 8px; }
+.total-row td { background: #eee; font-weight: bold; }
+.footer { text-align: right; font-size: 10px; color: #888;
+          margin-top: 20px; border-top: 1px solid #ccc; padding-top: 8px; width: 100%; }
+@media print {
+  body { padding: 0; }
+  .no-print { display: none; }
+}
+</style>
+
+<style>
+.summary-tbl { border-collapse: collapse; font-size: 12px; }
+.summary-tbl td { padding: 2px 4px; border-bottom: 1px solid #eee; }
+.summary-wrap { display: flex; gap: 48px; margin: 8px 0 18px; }
+.summary-wrap h4 { font-size: 11px; color: #666; margin-bottom: 4px; font-weight: normal; }
 </style>
 </head>
 <body>
-<div id="toast"></div>
-<div id="pesan-error">
-  <h2>⛔ Akses Tidak Valid</h2>
-  <p>Link tidak lengkap atau password salah.</p>
-</div>
-<div id="konten"></div>
-<script>
-function salinLink(url, label) {
-  var toast = document.getElementById('toast');
-  function tampilToast(pesan) {
-    toast.textContent = pesan;
-    toast.classList.add('show');
-    setTimeout(function() { toast.classList.remove('show'); }, 2500);
-  }
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(url).then(function() {
-      tampilToast('✅ Link ' + label + ' disalin!');
-    }).catch(function() {
-      fallbackCopy(url, label, tampilToast);
-    });
-  } else {
-    fallbackCopy(url, label, tampilToast);
-  }
-}
-function fallbackCopy(url, label, cb) {
-  var el = document.createElement('textarea');
-  el.value = url;
-  el.style.position = 'fixed';
-  el.style.opacity = '0';
-  document.body.appendChild(el);
-  el.focus(); el.select();
-  try { document.execCommand('copy'); cb('✅ Link ' + label + ' disalin!'); }
-  catch(e) { cb('❌ Gagal menyalin link'); }
-  document.body.removeChild(el);
-}
+<div class="halaman">
+  <div class="header">
+    <h1>Puskesmas Tambang Ulang</h1>
+    <h2>Distribusi Obat & BMHP</h2>
+    <div class="meta">12 September 2026</div>
+  </div>
 
-(function(){
-  var hash = window.location.hash.slice(1);
-  if (!hash) { document.getElementById('pesan-error').style.display='block'; return; }
-  var enc = "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";
-  try {
-    var key = unescape(encodeURIComponent(hash));
-    var data = atob(enc);
-    var result = '';
-    for (var i = 0; i < data.length; i++) {
-      result += String.fromCharCode(data.charCodeAt(i) ^ key.charCodeAt(i % key.length));
-    }
-    var decoded = decodeURIComponent(escape(result));
-    var el = document.getElementById('konten');
-    el.innerHTML = decoded;
-    el.style.display = 'block';
-  } catch(e) {
-    document.getElementById('pesan-error').style.display = 'block';
-  }
-})();
-</script>
+  <p style="margin:12px 0 6px"><strong>Ringkasan</strong></p>
+  <div class="summary-wrap">
+    <div>
+      <h4>Jumlah Kegiatan</h4>
+      <table class="summary-tbl"><tbody>
+        <tr><td>Penerima</td><td style="text-align:right;padding-left:20px"><strong>2</strong></td></tr>
+        <tr><td>Total Item</td><td style="text-align:right;padding-left:20px"><strong>26</strong></td></tr>
+      </tbody></table>
+    </div>
+    <div>
+      <h4>Daftar Penerima</h4>
+      <table class="summary-tbl"><tbody>
+        <tr><td>Pustu Martadah Baru</td><td style="text-align:right;padding-left:20px">22 item</td></tr><tr><td>Ruang Tindakan(UGD)</td><td style="text-align:right;padding-left:20px">4 item</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <div class="judul-seksi">Distribusi Obat & BMHP — 12 September 2026</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Nama Barang</th>
+        <th>Kode</th>
+        <th style="text-align:right">Jumlah</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+<tr class="grup-header">
+  <td colspan="2">Ke: <strong>Pustu Martadah Baru</strong></td>
+  <td style="text-align:right">22 item</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Cetrizine Syrup</td>
+  <td>A-050</td>
+  <td style="text-align:right">5</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Amoksisilin kapsul 500 mg</td>
+  <td>A-018</td>
+  <td style="text-align:right">100</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">parasetamol tablet 500 mg</td>
+  <td>A-164</td>
+  <td style="text-align:right">200</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Cetrizine Tablet</td>
+  <td>A-049</td>
+  <td style="text-align:right">200</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Cefadroxil 500 mg Tablet BPROV</td>
+  <td>A-047B</td>
+  <td style="text-align:right">100</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Kaptopril 25 mg tablet</td>
+  <td>A-102</td>
+  <td style="text-align:right">100</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Antasida DOEN tab,kombinasi :                                         Mg-Hidroksida 200mg+Al.Hidroksida 200mg</td>
+  <td>A-023</td>
+  <td style="text-align:right">200</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Asam Mefenamat 500 mg</td>
+  <td>A-036</td>
+  <td style="text-align:right">100</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Zinc Tablet 20 mg</td>
+  <td>A-210</td>
+  <td style="text-align:right">100</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Gentamicin SK</td>
+  <td>A-080</td>
+  <td style="text-align:right">2</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Betametason krim 0,1 %</td>
+  <td>A-043</td>
+  <td style="text-align:right">5</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Plester 2,5 cm x 4,5 m</td>
+  <td>C-054</td>
+  <td style="text-align:right">1</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Kapas Pembalut / Absorben 250 gram</td>
+  <td>C-032</td>
+  <td style="text-align:right">1</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Kasa Pembalut Hidrofil 4 m x 10 cm </td>
+  <td>C-038</td>
+  <td style="text-align:right">10</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Kasa Pembalut Hidrofil 16 m x 16 cm </td>
+  <td>C-037</td>
+  <td style="text-align:right">5</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Ringer Laktat Larutan infus steril </td>
+  <td>A-186</td>
+  <td style="text-align:right">2</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Infusion Set dewasa</td>
+  <td>C-023</td>
+  <td style="text-align:right">2</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Natrium Klorida Lar infus 0,9% steril </td>
+  <td>A-149</td>
+  <td style="text-align:right">2</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Ibuprofen tablet 400 mg</td>
+  <td>A-096</td>
+  <td style="text-align:right">100</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Natrium Diklofenak 50 mg tablet</td>
+  <td>A-148</td>
+  <td style="text-align:right">100</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Sianokonalamin (B 12 ) tablet</td>
+  <td>A-197</td>
+  <td style="text-align:right">100</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Ambroxol Sirup</td>
+  <td>A-010</td>
+  <td style="text-align:right">5</td>
+</tr>
+<tr class="grup-header">
+  <td colspan="2">Ke: <strong>Ruang Tindakan(UGD)</strong></td>
+  <td style="text-align:right">4 item</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Natrium Klorida Lar infus 0,9% steril </td>
+  <td>A-149</td>
+  <td style="text-align:right">2</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Pehacain Injeksi( Lidocain+Efinefrin )</td>
+  <td>F-029</td>
+  <td style="text-align:right">2</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Cat-Gut Plan No. 3/0</td>
+  <td>C-017</td>
+  <td style="text-align:right">2</td>
+</tr>
+<tr>
+  <td style="padding-left:20px">Alat Suntik sekali pakai 3 ml</td>
+  <td>C-003</td>
+  <td style="text-align:right">1</td>
+</tr>
+<tr class="total-row">
+  <td colspan="2">TOTAL</td>
+  <td style="text-align:right">26 item</td>
+</tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    Rizki Amalia, A.Md.Farm &nbsp;|&nbsp; NIP 198812142009032001 &nbsp;|&nbsp; Puskesmas Tambang Ulang
+  </div>
+</div>
 </body>
 </html>
