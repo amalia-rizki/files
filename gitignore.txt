@@ -1,0 +1,8 @@
+# Hanya dashboard yang di-push ke GitHub
+# Exclude semua HTML dan JSON kecuali dashboard
+**/*.json
+**/register/
+**/distribusi/
+**/penerimaan/
+**/rekap/
+**/log/
